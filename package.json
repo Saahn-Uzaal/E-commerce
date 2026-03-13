@@ -1,0 +1,17 @@
+{
+  "name": "gettsay-commerce-workspace",
+  "private": true,
+  "scripts": {
+    "setup": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint",
+    "db:migrate": "node backend/scripts/db-runner.js migrate",
+    "db:upgrade": "node backend/scripts/db-runner.js upgrade",
+    "db:seed": "node backend/scripts/db-runner.js seed",
+    "db:setup": "node backend/scripts/db-runner.js setup"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
