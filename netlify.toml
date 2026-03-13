@@ -1,6 +1,6 @@
 [build]
   base = "frontend"
-  command = "npm run build"
+  command = "npm ci --prefix ../backend && npm run build"
 
 [build.environment]
   NODE_VERSION = "22"
